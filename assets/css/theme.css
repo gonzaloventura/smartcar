@@ -1,0 +1,50 @@
+#header {
+    padding-top: 80px;
+}
+
+body {
+    background-color: #ececec;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.bg-modern {
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: rgb(0 121 67 / 14%) 0 -1px 1px inset;
+    background-color: rgba(0, 4, 19, 0.82);
+}
+
+.nav-link {
+    transition: ease-in-out 0.1s;
+    margin-right: 2rem;
+}
+
+.nav-link:active {
+    transform: scale(0.9);
+    transition: ease-in-out 0.1s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: ease-in-out 0.25s;
+}
+
+.card {
+    transition: ease-in-out 0.25s;
+}
+
+.btn-modern {
+    background-color: rgba(0, 4, 19, 0.82);
+    color: white;
+}
+
+.btn-modern:hover {
+    background-color: rgba(0, 4, 19, 0.78);
+    color: white;
+}
