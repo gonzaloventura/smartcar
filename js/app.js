@@ -1,5 +1,6 @@
 const autos = []
 
+const noReparados = [];
 const marcas = [{
         text: 'Volkswagen',
         value: 'Volkswagen'
@@ -114,12 +115,17 @@ function dashboard() {
     main.classList.add("container");
 
     const div = document.createElement("div");
+    div.classList.add("row");
 
+    const divCol = document.createElement("div");
+    divCol.classList.add("cardsDash");
+    div.appendChild(divCol);
 
     main.appendChild(div);
 
-
-    main.appendChild(cardAutosTaller());
+    divCol.appendChild(cardAutosTaller());
+    divCol.appendChild(cardAutosReparados());
+    divCol.appendChild(cardAutosSinReparar());
 }
 
 function nuevosIngresos() {
@@ -233,10 +239,41 @@ function cardAutosTaller() {
     const card = document.createElement("div");
     card.classList.add("card", "shadow-sm");
     card.setAttribute("style", "width: 20rem;");
+
     card.innerHTML = `
-    <div class="card-body text-center text-light bg-success rounded">
+    <div class="card-body text-center text-light bg-modern rounded">
         <h2 class="card-title">${autos.length}</h2>
         <h5 class="card-title">Autos en taller</h5>
+    </div>
+    `
+    return card;
+}
+
+function cardAutosReparados() {
+
+    filtrarReparados();
+    const card = document.createElement("div");
+    card.classList.add("card", "shadow-sm");
+    card.setAttribute("style", "width: 20rem;");
+
+    card.innerHTML = `
+    <div class="card-body text-center text-light bg-success rounded">
+        <h2 class="card-title">${filtrarReparados().length}</h2>
+        <h5 class="card-title">Autos reparados</h5>
+    </div>
+    `
+    return card;
+}
+
+function cardAutosSinReparar() {
+    const card = document.createElement("div");
+    card.classList.add("card", "shadow-sm");
+    card.setAttribute("style", "width: 20rem;");
+
+    card.innerHTML = `
+    <div class="card-body text-center text-light bg-danger rounded">
+        <h2 class="card-title">${filtrarNoReparados().length}</h2>
+        <h5 class="card-title">Autos sin reparar</h5>
     </div>
     `
     return card;
@@ -283,14 +320,67 @@ function verAutos(autos) {
                         <h5><strong>Estado:</strong> ${reparado ? "Reparado" : "Sin reparar"}</h5>
                     </div>
                     <div class="col-2 d-grid gap-2 mx-auto" style="align-self:center;">
-                        <button class="btn btn-modern">Ver detalles</button>
-                        <button class="btn btn-warning" id="${dominio}">Marcar como reparado</button>
+                        <button class="btn btn-modern" id="${dominio}">Ver detalles</button>
                     </div>
                 </div>
             </div>
         `;
         main.appendChild(card);
+        let btn = document.getElementById(dominio);
+        btn.addEventListener("click", () => {
+            verDetalles(auto);
+        });
     }
+
 }
+
+function filtrarReparados() {
+    const reparados = autos.filter(e => e.reparado == true);
+    return reparados;
+}
+
+function filtrarNoReparados() {
+    const noReparados = autos.filter(e => e.reparado == false);
+    return noReparados;
+}
+
+function verDetalles(auto) {
+    const { cliente, marca, modelo, odometro, dominio, reparado } = auto;
+    const main = document.getElementById("main");
+    main.innerHTML = "";
+    main.classList.add("container");
+    const card = document.createElement("div");
+    card.classList.add("card", "shadow-sm", "mb-3");
+    card.innerHTML = `
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-1" style="align-self:center;">
+                        <img src="assets/img/marcas/${marca}.png" width="120px" alt="${marca}">
+                    </div>
+                    <div class="col-2" style="align-self:center;">
+                        <img src="assets/img/marcas/${marca}.png" width="120px" alt="${marca}">
+                    </div>
+                    <div class="col-3" style="align-self:center;">
+                        <h5><strong>Cliente:</strong> ${cliente}</h5>
+                    </div>
+                    <div class="col-3" style="align-self:center;">
+                        <h5><strong>Modelo:</strong> ${dominio}</h5>
+                    </div>
+                    <div class="col-3" style="align-self:center;">
+                        <h5><strong>Estado:</strong> ${reparado ? "Reparado" : "Sin reparar"}</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" style="align-self:center;">
+                        
+                    </div>
+                </div>
+            </div>
+    `
+    main.appendChild(card);
+
+}
+
+
 
 init();

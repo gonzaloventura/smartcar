@@ -13,6 +13,7 @@ class Autos {
     }
 
     reparar() {
-        this.reparado = true;
+        this.reparado = true
+        return "Reparado";
     }
 }

@@ -1,5 +1,5 @@
 #header {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 body {
@@ -30,15 +30,6 @@ body {
     transition: ease-in-out 0.1s;
 }
 
-.card:hover {
-    transform: scale(1.01);
-    transition: ease-in-out 0.25s;
-}
-
-.card {
-    transition: ease-in-out 0.25s;
-}
-
 .btn-modern {
     background-color: rgba(0, 4, 19, 0.82);
     color: white;
@@ -47,4 +38,10 @@ body {
 .btn-modern:hover {
     background-color: rgba(0, 4, 19, 0.78);
     color: white;
+}
+
+.cardsDash {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-y: auto;
 }

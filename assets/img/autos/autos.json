@@ -1,0 +1,9 @@
+{
+    marca: volkswagen,
+    modelo: gol,
+    image: 'marcas/volkswagen/gol.jpg'
+}, {
+    marca: volkswagen,
+    modelo: golf,
+    image: 'marcas/volkswagen/golf.jpg'
+}
