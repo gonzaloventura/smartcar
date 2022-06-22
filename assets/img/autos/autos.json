@@ -32,5 +32,40 @@
         "marca": "Audi",
         "car": "A8",
         "img": "assets/img/autos/audi/a8.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "Joy",
+        "img": "assets/img/autos/chevrolet/joy.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "Onix",
+        "img": "assets/img/autos/chevrolet/onix.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "Onix Plus",
+        "img": "assets/img/autos/chevrolet/onxplus.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "Cruze",
+        "img": "assets/img/autos/chevrolet/cruze.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "Tracker",
+        "img": "assets/img/autos/chevrolet/tracker.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "Equinox",
+        "img": "assets/img/autos/chevrolet/equinox.jpg"
+    },
+    {
+        "marca": "Chevrolet",
+        "car": "S10",
+        "img": "assets/img/autos/chevrolet/s10.jpg"
     }
 ]
