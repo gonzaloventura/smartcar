@@ -1,5 +1,4 @@
 const autos = []
-
 const noReparados = [];
 const marcas = [{
         text: 'Volkswagen',
@@ -54,8 +53,6 @@ const marcas = [{
         value: 'Audi'
     }
 ];
-
-let modeloFetchs = [];
 
 ordenarArray(marcas);
 
@@ -158,7 +155,8 @@ function nuevosIngresos() {
         <div class="row">
             <div class="col-md-6 p-2">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="modelo" placeholder="Modelo">
+                <select class="form-select" id="modelo">
+                </select>
                 </div>
             </div>
             <div class="col-md-6 p-2">
@@ -183,6 +181,7 @@ function nuevosIngresos() {
     main.appendChild(div);
 
     selectMarcas();
+    fetchModelos();
 
     agregarAuto();
 
@@ -191,11 +190,27 @@ function nuevosIngresos() {
 
 function selectMarcas() {
     let optionList = document.getElementById('marca').options;
+    optionList.add(new Option('Seleccione una marca', '', false));
     marcas.forEach((element) =>
         optionList.add(
             new Option(element.text, element.value, element.selected)
         )
     );
+}
+
+function selectCarsModels(data) {
+    let marca = document.getElementById('marca');
+    marca.addEventListener("change", () => {
+        let modelo = document.getElementById('modelo');
+        modelo.innerHTML = "";
+        let modeloFetchs = data.filter(e => e.marca == marca.value);
+        modeloFetchs.forEach((element) => {
+            let optionList = document.getElementById('modelo').options;
+            optionList.add(
+                new Option(element.car, element.car, element.selected)
+            )
+        });
+    });
 }
 
 function agregarAuto() {
@@ -350,6 +365,15 @@ function filtrarNoReparados() {
     return noReparados;
 }
 
+// Fetch para obtener los modelos de la marca seleccionada
+function fetchModelos() {
+    fetch("assets/img/autos/autos.json")
+        .then(result => result.json())
+        .then(data => selectCarsModels(data));
+}
+
+
+// Fetch para obtener las imagenes de los modelos
 function fetchLocal(auto) {
     fetch("assets/img/autos/autos.json")
         .then(result => result.json())
@@ -392,8 +416,6 @@ function mostrarDetalles(data, auto) {
     `
     main.appendChild(card);
 }
-
-
 
 function verDetalles(auto) {
     fetchLocal(auto);
