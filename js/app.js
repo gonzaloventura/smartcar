@@ -48,8 +48,14 @@ const marcas = [{
     {
         text: 'Porsche',
         value: 'Porsche'
+    },
+    {
+        text: 'Audi',
+        value: 'Audi'
     }
 ];
+
+let modeloFetchs = [];
 
 ordenarArray(marcas);
 
@@ -344,8 +350,15 @@ function filtrarNoReparados() {
     return noReparados;
 }
 
-function verDetalles(auto) {
+function fetchLocal(auto) {
+    fetch("assets/img/autos/autos.json")
+        .then(result => result.json())
+        .then(data => mostrarDetalles(data, auto));
+}
+
+function mostrarDetalles(data, auto) {
     const { cliente, marca, modelo, odometro, dominio, reparado } = auto;
+    let modeloFetchs = data.filter(e => e.car == modelo);
     const main = document.getElementById("main");
     main.innerHTML = "";
     main.classList.add("container");
@@ -357,8 +370,8 @@ function verDetalles(auto) {
                     <div class="col-1" style="align-self:center;">
                         <img src="assets/img/marcas/${marca}.png" width="120px" alt="${marca}">
                     </div>
-                    <div class="col-2" style="align-self:center;">
-                        <img src="assets/img/marcas/${marca}.png" width="120px" alt="${marca}">
+                    <div class="col-2" style="align-self:center; text-align: center;">
+                        <img class="img-rounded" src="${modeloFetchs[0].img}" alt="${modeloFetchs[0].car}">
                     </div>
                     <div class="col-3" style="align-self:center;">
                         <h5><strong>Cliente:</strong> ${cliente}</h5>
@@ -378,7 +391,12 @@ function verDetalles(auto) {
             </div>
     `
     main.appendChild(card);
+}
 
+
+
+function verDetalles(auto) {
+    fetchLocal(auto);
 }
 
 

@@ -1,9 +1,36 @@
-{
-    marca: volkswagen,
-    modelo: gol,
-    image: 'marcas/volkswagen/gol.jpg'
-}, {
-    marca: volkswagen,
-    modelo: golf,
-    image: 'marcas/volkswagen/golf.jpg'
-}
+[{
+        "marca": "Audi",
+        "car": "A1",
+        "img": "assets/img/autos/audi/a1.jpg"
+    },
+    {
+        "marca": "Audi",
+        "car": "A3",
+        "img": "assets/img/autos/audi/a3.jpg"
+    },
+    {
+        "marca": "Audi",
+        "car": "A4",
+        "img": "assets/img/autos/audi/a4.jpg"
+    },
+    {
+        "marca": "Audi",
+        "car": "A5",
+        "img": "assets/img/autos/audi/a5.jpg"
+    },
+    {
+        "marca": "Audi",
+        "car": "A6",
+        "img": "assets/img/autos/audi/a6.jpg"
+    },
+    {
+        "marca": "Audi",
+        "car": "A7",
+        "img": "assets/img/autos/audi/a7.jpg"
+    },
+    {
+        "marca": "Audi",
+        "car": "A8",
+        "img": "assets/img/autos/audi/a8.jpg"
+    }
+]
