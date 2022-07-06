@@ -46,9 +46,8 @@ body {
     overflow-y: auto;
 }
 
-.img-rounded {
-    border-radius: 50%;
-    object-fit: cover;
-    width: 100px;
-    height: 100px;
+.img {
+    object-fit: contain;
+    width: 220px;
+    border-radius: 20px;
 }

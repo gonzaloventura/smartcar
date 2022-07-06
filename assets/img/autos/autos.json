@@ -67,5 +67,310 @@
         "marca": "Chevrolet",
         "car": "S10",
         "img": "assets/img/autos/chevrolet/s10.jpg"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 1",
+        "img": "assets/img/autos/Bmw/serie1.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 2 Coupe",
+        "img": "assets/img/autos/Bmw/serie2coupe.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 2 Gran Coupe",
+        "img": "assets/img/autos/Bmw/serie2grancoupe.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 4",
+        "img": "assets/img/autos/Bmw/serie4.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 5",
+        "img": "assets/img/autos/Bmw/serie5.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 7",
+        "img": "assets/img/autos/Bmw/serie7.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "Serie 8",
+        "img": "assets/img/autos/Bmw/serie8.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "X1",
+        "img": "assets/img/autos/Bmw/x1.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "X2",
+        "img": "assets/img/autos/Bmw/x2.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "X3",
+        "img": "assets/img/autos/Bmw/x3.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "X4",
+        "img": "assets/img/autos/Bmw/x4.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "X5",
+        "img": "assets/img/autos/Bmw/x5.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "X6",
+        "img": "assets/img/autos/Bmw/x6.webp"
+    },
+    {
+        "marca": "BMW",
+        "car": "M5",
+        "img": "assets/img/autos/Bmw/m5.webp"
+    },
+    {
+        "marca": "Dodge",
+        "car": "Durango",
+        "img": "assets/img/autos/Dodge/durango.png"
+    },
+    {
+        "marca": "Dodge",
+        "car": "Charger",
+        "img": "assets/img/autos/Dodge/charger.png"
+    },
+    {
+        "marca": "Dodge",
+        "car": "Challenger",
+        "img": "assets/img/autos/Dodge/challenger.png"
+    },
+    {
+        "marca": "Dodge",
+        "car": "RAM",
+        "img": "assets/img/autos/Dodge/ram.png"
+    },
+    {
+        "marca": "Ford",
+        "car": "Bronco",
+        "img": "assets/img/autos/Ford/bronco.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Ecosport",
+        "img": "assets/img/autos/Ford/bronco.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "F150",
+        "img": "assets/img/autos/Ford/f150.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "F150 Raptor",
+        "img": "assets/img/autos/Ford/f150raptor.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Kuga",
+        "img": "assets/img/autos/Ford/kuga.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Maverick",
+        "img": "assets/img/autos/Ford/maverick.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Mustang",
+        "img": "assets/img/autos/Ford/mustang.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Ranger",
+        "img": "assets/img/autos/Ford/ranger.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Ranger Raptor",
+        "img": "assets/img/autos/Ford/rangerraptor.webp"
+    },
+    {
+        "marca": "Ford",
+        "car": "Territory",
+        "img": "assets/img/autos/Ford/territory.webp"
+    },
+    {
+        "marca": "Honda",
+        "car": "CRV",
+        "img": "assets/img/autos/Honda/crv.jpg"
+    },
+    {
+        "marca": "Honda",
+        "car": "HRV",
+        "img": "assets/img/autos/Honda/hrv.jpg"
+    },
+    {
+        "marca": "Honda",
+        "car": "Pilot",
+        "img": "assets/img/autos/Honda/pilot.jpg"
+    },
+    {
+        "marca": "Honda",
+        "car": "Fit",
+        "img": "assets/img/autos/Honda/fit.jpg"
+    },
+    {
+        "marca": "Honda",
+        "car": "WRV",
+        "img": "assets/img/autos/Honda/wrv.jpg"
+    },
+    {
+        "marca": "Nissan",
+        "car": "Frontier",
+        "img": "assets/img/autos/Nissan/frontier.jpg"
+    },
+    {
+        "marca": "Nissan",
+        "car": "Kicks",
+        "img": "assets/img/autos/Nissan/kicks.jpg"
+    },
+    {
+        "marca": "Nissan",
+        "car": "Versa",
+        "img": "assets/img/autos/Nissan/versa.png"
+    },
+    {
+        "marca": "Nissan",
+        "car": "Sentra",
+        "img": "assets/img/autos/Nissan/sentra.png"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "207",
+        "img": "assets/img/autos/Peugeot/207.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "208",
+        "img": "assets/img/autos/Peugeot/208.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "307",
+        "img": "assets/img/autos/Peugeot/307.jpg"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "308",
+        "img": "assets/img/autos/Peugeot/308.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "408",
+        "img": "assets/img/autos/Peugeot/408.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "2008",
+        "img": "assets/img/autos/Peugeot/2008.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "3008",
+        "img": "assets/img/autos/Peugeot/3008.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "5008",
+        "img": "assets/img/autos/Peugeot/5008.webp"
+    },
+    {
+        "marca": "Peugeot",
+        "car": "Partner",
+        "img": "assets/img/autos/Peugeot/parnet.webp"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Etios",
+        "img": "assets/img/autos/Toyota/etios.png"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Corolla",
+        "img": "assets/img/autos/Toyota/corolla.png"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Corolla GR",
+        "img": "assets/img/autos/Toyota/corollagr.png"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Yaris GR",
+        "img": "assets/img/autos/Toyota/gryaris.jpg"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Yaris",
+        "img": "assets/img/autos/Toyota/yaris.png"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Prius",
+        "img": "assets/img/autos/Toyota/prius.png"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Camry",
+        "img": "assets/img/autos/Toyota/camry.png"
+    },
+    {
+        "marca": "Toyota",
+        "car": "Hilux",
+        "img": "assets/img/autos/Toyota/hliux.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Gol",
+        "img": "assets/img/autos/Volkswagen/gol.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Golf",
+        "img": "assets/img/autos/Volkswagen/golf.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Polo",
+        "img": "assets/img/autos/Volkswagen/polo.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Taos",
+        "img": "assets/img/autos/Volkswagen/taos.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Tiguan",
+        "img": "assets/img/autos/Volkswagen/tiguan.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Up",
+        "img": "assets/img/autos/Volkswagen/up.jpg"
+    },
+    {
+        "marca": "Volkswagen",
+        "car": "Virtus",
+        "img": "assets/img/autos/Volkswagen/virtus.jpg"
     }
 ]

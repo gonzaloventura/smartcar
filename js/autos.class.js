@@ -16,4 +16,8 @@ class Autos {
         this.reparado = true
         return "Reparado";
     }
+    quitarReparacion() {
+        this.reparado = false
+        return "No Reparado";
+    }
 }
